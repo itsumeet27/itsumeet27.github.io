@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import banner from './assets/img/banner.JPG';
+import HeaderSection from './shared/HeaderSection'
+import FooterBar from './shared/FooterSection'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <HeaderSection></HeaderSection>
+      <div style={{ width: '100%', height: '680px'}}>
+        <img src={banner} className="" alt="Sunset" style={{ width: '100%', height: '100%'}}/>
+      </div>
+      <FooterBar></FooterBar>
     </div>
   );
 }
