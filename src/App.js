@@ -6,11 +6,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <HeaderSection></HeaderSection>
+    <HeaderSection />
       <div style={{ width: '100%', height: '680px'}}>
         <img src={banner} className="" alt="Sunset" style={{ width: '100%', height: '100%'}}/>
       </div>
-      <FooterBar></FooterBar>
+      <FooterBar />
     </div>
   );
 }
