@@ -3,18 +3,19 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function NavigationBar(props) {
   return (
     <Navbar collapseOnSelect bg="light" expand="lg" sticky='top'>
       <Container>
-        <Navbar.Brand href="./">{props.title}</Navbar.Brand>
+        <Navbar.Brand><Link to="/" className='nav-link'>{props.title}</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto my-2 my-lg-0">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">{props.about}</Nav.Link>
-            <Nav.Link href="/contact">{props.contact}</Nav.Link>
+            <Link to="/" className='nav-link px-2'>Home</Link>
+            <Link to="/about" className='nav-link px-2'>{props.about}</Link>
+            <Link to="/contact" className='nav-link px-2'>{props.contact}</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
