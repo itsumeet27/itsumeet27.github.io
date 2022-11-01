@@ -11,7 +11,7 @@ function Banner() {
                         <Card.Body className="py-5 px-3">
                             <p>Hello there, I am</p>
                             <h1 className="h1-responsive pb-1">Sumeet Sharma</h1>
-                            <h6 className="h6-responsive">Fullstack Developer at EduHubSPot</h6>
+                            <h6 className="h6-responsive">Fullstack Developer at EduHubSpot</h6>
                             <p className="py-1 about-me">
                                 Graduated as an Engineer in Information Technology from the University of Mumbai 
                                 I have always had a keen interest in developing website/web applications using the technologies 
