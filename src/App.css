@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+/* Banner.js */
+
+.about-me {
+  font-size: 14px
+}
+
+.profile-img {
+  width: 420px;
+  box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.5);
+}
