@@ -4,7 +4,7 @@ import  profile_img  from "../assets/img/Sumeet-Sharma.JPG";
 
 function Banner() {
     return (
-        <Container>
+        <Container className="py-4" >
             <Row>
                 <Col sm>
                     <Card className="border-0" align="start">
