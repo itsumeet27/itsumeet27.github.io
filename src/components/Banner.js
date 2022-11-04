@@ -1,46 +1,46 @@
 import React from "react";
-import { Row, Col, Card, Container, Button } from "react-bootstrap";
-import  profile_img  from "../assets/img/Sumeet-Sharma.JPG";
+import { Card, Container, Button } from "react-bootstrap";
+import myprofile  from "../assets/img/sumeet_sharma-home.jpg";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
+const styles= {
+    profile_img: {
+        width: "200px",
+        height: "200px",
+        borderRadius: "50%"
+    },
+
+    social_links: {
+        fontSize: "26px",
+        margin: "15px 7.5px",
+        color: "#333",
+
+    }
+}
 
 function Banner() {
     return (
-        <Container className="py-4" >
-            <Row>
-                <Col sm>
-                    <Card className="border-0" align="start">
-                        <Card.Body className="py-5 px-3">
-                            <p>Hello there, I am</p>
-                            <h1 className="h1-responsive pb-1">Sumeet Sharma</h1>
-                            <h6 className="h6-responsive">Fullstack Developer at EduHubSpot</h6>
-                            <p className="py-1 about-me">
-                                Graduated as an Engineer in Information Technology from the University of Mumbai 
-                                I have always had a keen interest in developing website/web applications using the technologies 
-                                I learned from time to time. 
-                            </p>
-                            <p className="about-me">
-                                It has helped me in analyzing the issues in websites/applications 
-                                and providing necessary recommendations to the
-                                client to make the design look neat and appealing for the target audience. 
-                            </p>
-                            <p className="about-me">
-                                Apart from developing websites I also like to draw as a part of my leisure time which helps me calm my mind and utilize my creative side
-                            </p>
-                            <Button variant="dark" size="lg">
-                                Know More
-                            </Button>
-                        </Card.Body>
-                    </Card> 
-                </Col>
-                <Col sm>
-                    <Card className="border-0">
-                        <Card.Body>
-                            <img src={profile_img} className="img-fluid p-4 profile-img" alt="Sumeet Sharma" />
-                        </Card.Body>
-                    </Card>
-                    
-                </Col>
-            </Row>
-        </Container>
+        <div className="bg-dark py-4">
+            <Container className="my-4">
+                <Card className="my-5 py-5 border-0">
+                    <Card.Body>
+                        <img src={ myprofile } style={ styles.profile_img } alt="Sumeet Sharma" />
+                        <h1 className="pt-4">Sumeet Dilip Sharma</h1>
+                        <div className="social">
+                            <a href="https://facebook.com/itsumeet/" style={ styles.social_links }><FaFacebook /></a>
+                            <a href="https://linkedin.com/itsumeet/" style={ styles.social_links }><FaLinkedin /></a>
+                            <a href="https://instagram.com/itsumeet27/" style={ styles.social_links }><FaInstagram /></a>
+                            <a href="https://twitter.com/itsumeet27/" style={ styles.social_links }><FaTwitter /></a>
+                            <a href="https://github.com/itsumeet27/" style={ styles.social_links }><FaGithub /></a>
+                        </div>
+                        <div className="py-4">
+                            <Link to="/about" className="nav-link"><Button variant="dark" size="lg">Know More</Button></Link>
+                        </div>                        
+                    </Card.Body>
+                </Card>
+            </Container>
+        </div>
     )
 }
 

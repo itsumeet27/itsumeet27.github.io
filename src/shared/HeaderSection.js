@@ -15,7 +15,7 @@ function NavigationBar(props) {
           <Nav className="me-auto my-2 my-lg-0">
             <Link to="/" className='nav-link px-2'>Home</Link>
             <Link to="/about" className='nav-link px-2'>{props.about}</Link>
-            <Link to="/contact" className='nav-link px-2'>{props.contact}</Link>
+            {/* <Link to="/contact" className='nav-link px-2'>{props.contact}</Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
